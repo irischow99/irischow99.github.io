@@ -1,0 +1,215 @@
+body {
+	font-family: 'Avenir';
+	font-size: 80px;
+	background: #adebeb;
+	transition: 0.5s;
+}
+
+@keyframes titlerise {
+	0% {
+		margin-top: 200px;
+	}
+
+	25% {
+		margin-top: 200px;	
+	}
+
+	75% {
+		margin-top: 0px;
+	}
+
+	100% {
+		margin-top: 10px;
+	}
+}
+
+@keyframes titleopacity {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes steam {
+	0% {
+		top: 25px;
+	}
+	50% {
+		top: 45px;
+	}
+	100% {
+		top: 25px;
+	}
+}
+
+
+#steam {
+	text-align: center;
+	animation: steam 3s infinite;
+	left: 47%;
+	position: absolute;
+}
+
+#title  {
+	text-align: center;
+	margin-bottom: 130px;
+	margin-top: 10px;
+	animation: titlerise 4s ease-out,
+	titleopacity 4s;
+	color: #4d4d4d;
+}
+
+#steaming-bread {
+	text-align: center;
+	margin-top: 130px;
+}
+
+#heading {
+	text-align: center;
+	margin-top: 150px;
+	color: #4d4d4d;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(15deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.ingredient {
+	margin-top: 50px;
+}
+
+.ingredient:hover {
+	animation: wiggle 2s ease-in-out infinite;
+	cursor: pointer;
+}
+
+#instructiontitle {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 150px;
+	color: #4d4d4d;
+}
+
+#preheat {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 300px;
+	margin-bottom: 300px;
+	color: #4d4d4d;
+}
+
+.changeColorPink {
+	background: #ffcccc;
+}
+
+.changeColorOrange {
+	background: #ffc266;
+}
+
+.changeColorGreen {
+	background: #ddff99;
+}
+
+.changeColorYellow {
+	background: #ffed03;
+}
+
+.changeColorPurple {
+	background: #ccd4ff;
+}
+
+.changeColorPink2 {
+	background: #ffcccc;
+}
+
+.changeColorOrange2 {
+	background: #ffc266;
+}
+
+.changeColorBlue2 {
+	background: #adebeb;
+}
+
+.positionFixed {
+	position: fixed;
+}
+
+.page {
+
+}
+
+#diagram {
+	text-align: center;
+	margin-top: 40px;
+}
+
+#instruction {
+	text-align: center;
+	font-size: 25px;
+	color: #4d4d4d;
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.ingredientpage {
+	font-size: 25px;
+	color: white;
+	position: fixed;
+	top: 50%;
+	left: 25%;
+	text-shadow: 0 1px 0 #fff;
+	z-index: 3;
+}
+
+#close {
+	color: white;
+	font: 36px/100% arial, sans-serif;
+  	position: fixed;
+	right: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 20px;
+	z-index: 3;
+	transition: 0.5s;
+}
+
+#close:hover {
+	cursor: pointer;
+	font-size: 40px;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}
