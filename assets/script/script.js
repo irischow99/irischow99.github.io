@@ -6,7 +6,6 @@ $(document).ready(function() {
 		$("#lightbox").show();
 		$(".ingredientpage").hide();
 		let ing = parseInt($(this).attr("id"));
-		console.log(ing);
 		$("#i" + ing).show();
 	})
 
@@ -15,7 +14,6 @@ $(document).ready(function() {
 	})
 
 	$(window).scroll(function() {
-		console.log($(this).scrollTop());
 		if ($(this).scrollTop() > 60 && $(this).scrollTop() < 1000) {
 			$('body').addClass('changeColorPink');
 			$('body').removeClass('changeColorOrange');
