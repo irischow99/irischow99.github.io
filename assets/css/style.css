@@ -136,7 +136,7 @@ body {
 }
 
 .changeColorYellow {
-	background: #ffff99;
+	background: #ffed03;
 }
 
 .changeColorPurple {
@@ -160,7 +160,7 @@ body {
 }
 
 .page {
-
+	height: 100%;
 }
 
 #diagram {
@@ -215,5 +215,5 @@ body {
 }
 
 #credit {
-	font-size: 12px
+	font-size: 12px;
 }
